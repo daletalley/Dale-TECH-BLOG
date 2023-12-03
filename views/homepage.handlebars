@@ -1,0 +1,29 @@
+<!-- Loop over each object in the articles array -->
+<div class="row text-center">
+    <div class="col-auto">
+        <h2>Wubba Lubba Dub Dub!</h2>
+        <p>Check out articles from our bloggers!</p>
+    </div>
+</div>
+<div class="row">
+    {{#each plainArticlesData}}
+    <div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="/articles/{{this.id}}">{{this.title}}</a>
+                    </h4>
+                    <p class="card-text">
+                    <p>Created on {{format_date this.createdAt}}</p>
+                    <br>
+                    <p>
+                        {{this.content}}
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
