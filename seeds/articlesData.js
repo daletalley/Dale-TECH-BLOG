@@ -2,18 +2,18 @@ const { Articles } = require('../models');
 
 const articlesData = [
     {
-        title: 'BlogPost1',
-        content: 'Content1',
+        title: 'running is fun',
+        content: 'run all day',
         user_id: 1,
     },
     {
-        title: 'BlogPost2',
-        content: 'Content2',
+        title: 'i love the holidays',
+        content: 'holiday season is the best',
         user_id: 2,
     },
     {
-        title: 'BlogPost3',
-        content: 'Content3',
+        title: 'lets go to the beach',
+        content: 'lets go to the beach and have some fun',
         user_id: 3,
     }
 ];
